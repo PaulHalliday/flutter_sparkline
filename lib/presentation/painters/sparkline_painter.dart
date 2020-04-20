@@ -3,9 +3,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class SparklinePainter extends CustomPainter {
+  SparklinePainter({@required this.data, this.color});
+
   List<num> data;
   Color color;
-  SparklinePainter({@required this.data, this.color});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -15,7 +16,6 @@ class SparklinePainter extends CustomPainter {
 
     for (num point in data) {
       num barHeight = (size.height * point / maxValue).roundToDouble();
-
       _drawBar(
         canvas: canvas,
         left: barSize * index,

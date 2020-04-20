@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_sparkline/sparkline_painter.dart';
+import 'package:flutter_sparkline/presentation/painters/sparkline_painter.dart';
 
 class SparklineChart extends StatelessWidget {
   @override
